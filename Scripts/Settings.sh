@@ -62,3 +62,6 @@ if [[ "${WRT_TARGET^^}" == *"QUALCOMMAX"* ]]; then
 		echo "qualcommax set up nowifi successfully!"
 	fi
 fi
+# 添加WAN MAC
+uci set network.wan.macaddr='02:8A:4E:9C:77:B1'
+uci commit network
